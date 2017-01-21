@@ -12,9 +12,10 @@ module.exports = {
 				loader: 'url'
 			},
 			{
-				test: /\.css/,
-				loaders: [ 'style', 'css' ]
+				test: /\.scss$/,
+				loader: 'style!css!postcss!sass'
 			}
 		]	
-	}
+	},
+	watch: true
 }
