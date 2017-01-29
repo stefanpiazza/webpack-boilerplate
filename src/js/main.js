@@ -1,1 +1,1 @@
-var css = require('../css/main.css');
+var scss = require('../scss/main.scss');
