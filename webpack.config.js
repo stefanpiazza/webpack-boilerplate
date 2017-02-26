@@ -19,16 +19,9 @@ module.exports = {
 		contentBase: path.resolve(__dirname, './')
 	},
 	devtool: 'source-map',
-	plugins: [
-		new webpack.optimize.CommonsChunkPlugin({
-			name: 'commons',
-			filename: './js/commons.js',
-			minChunks: 2,
-		}),
-	],
 	module: {
 		rules: [
-			{	
+			{
 				test: /\.(svg|jpg)$/,
 				use: 'url-loader'
 			},
@@ -42,14 +35,19 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'commons',
+			filename: './js/commons.js',
+			minChunks: 2,
+		}),		
 	    new ExtractTextPlugin({
 	    	filename: 'css/[name].bundle.css',
 	    }),
 	    new BrowserSyncPlugin({
 	        host: 'localhost',
-	        port: 3000,	
-	        server: { 
-	        	baseDir: './' 
+	        port: 3000,
+	        server: {
+	        	baseDir: './'
 	        }
         })
   	]
