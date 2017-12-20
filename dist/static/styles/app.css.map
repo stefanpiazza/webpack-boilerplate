@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/scss/src/scss/main.scss"],"names":[],"mappings":"AAAA;EACC,uBAAsB;EACtB,UAAS;EACT,WAAU,EACV","file":"static/styles/app.css","sourcesContent":["* {\r\n\tbox-sizing: border-box;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\n\n\n// WEBPACK FOOTER //\n// ./src/scss/src/scss/main.scss"],"sourceRoot":""}
